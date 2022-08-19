@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="midia/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Produto.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<div class="forms">
+    <main>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="input-padrao" required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email@gmail.com" class="input-padrao" required>
+
+            <label for="number">Telefone</label> 
+            <input type="tel" id="number" placeholder="(xx)  x xxxx-xxxx" class="input-padrao">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="54" rows="10" class="input-padrao"></textarea>
+
+            <fieldset>
+                <legend>Como refere o contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email">Email</label>
+                
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone">Tel:.</label>
+                
+
+                <label for="whatsapp"><input type="radio" name="contato" value="whatsapp">Whatsapp</label>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+
+            </fieldset>
+
+                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <button type="submit">Enviar</button>
+        </form>
+    </main>
+</div>
+    <footer>
+        <img src="midia/logo-branco.png">
+        <p>&copy; Copyright Bruno Barbearia - 2019</p>
+    </footer>
+</body>
+
+</html>
